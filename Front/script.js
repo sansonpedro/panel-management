@@ -147,7 +147,6 @@ modalHistorico.addEventListener("click", (e) => {
   if (e.target === modalHistorico) modalHistorico.classList.add("hidden");
 });
 
-// Form para adicionar produto novo
 newProductForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const id = Number(document.getElementById("newId").value);
@@ -175,5 +174,4 @@ newProductForm.addEventListener("submit", (e) => {
     .catch(err => alert(err.message));
 });
 
-// Carrega produtos ao abrir a página
 fetchProdutos();
