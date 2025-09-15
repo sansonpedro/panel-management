@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle de estoque</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Controle de estoque</h1>
+    </header>
+
+    <section class="add-product">
+      <h2>Adicionar produto</h2>
+      <form id="newProductForm">
+        <input type="number" id="newId" placeholder="ID (número)" required />
+        <input type="text" id="newNome" placeholder="Nome do produto" required />
+        <input type="number" id="newQuantidade" placeholder="Quantidade inicial" required />
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="inventory">
+      <h2>Produtos</h2>
+      <table id="produtosTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="produtosBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- Modal histórico -->
+  <div id="modalHistorico" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn">X</button>
+      <h3>Histórico</h3>
+      <ul id="historicoList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
