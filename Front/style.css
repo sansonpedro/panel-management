@@ -29,7 +29,7 @@
   header h1 {
     text-align: center;
     margin-bottom: 16px;
-    color: #8400ff;
+    color: #ff782b;
     letter-spacing: 1px;
   }
   
@@ -55,7 +55,7 @@
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    background: #8a2be2;
+    background: #a35c00;
     color: #fff;
   }
   
